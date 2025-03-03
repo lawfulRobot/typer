@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#game-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#input-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Adjust height to account for the removed margin */
+    text-align: center;
+    font-size: 100px;
+}
+
+.correct {
+    color: cyan;
+}
+
+.remaining {
+    color: white;
+}
+
+.wrong {
+    color: red;
+    animation: shake 0.5s ease-in-out;
+}
+
+.falling-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease-in, opacity 1s ease-in;
+    font-size: 2em;
+    pointer-events: none;
+}
+
+.top-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

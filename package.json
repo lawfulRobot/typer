@@ -1,0 +1,21 @@
+{
+  "name": "typer",
+  "version": "1.0.0",
+  "description": "A simple word typing game implemented in a web application.",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /typer/",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://lawfulRobot.github.io/typer",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "live-server": "^1.2.2",
+    "parcel": "^2.13.3"
+  },
+  "author": "",
+  "license": "MIT"
+}
